@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>sanae tsunemi / hobby</title>
+  <meta name="description" content="Wedデザイナー/Webコーダー/Webディレクター/フロントエンドエンジニア。常味早苗の趣味サイトです。世界一周/旅/カメラ/写真/音楽。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="other/favicon.ico">
+  <script type="text/javascript" src="other/jquery-3.2.1.min.js"></script>
+  <script>
+    $(function () {
+      $('#top').on('click', function () {
+        $('#top_page').fadeIn('slow'), $('#travel_page,#photo_page,#music_page,#about_page').fadeOut('slow'),
+          $('#top').css('color', 'crimson'), $('#about, #travel, #photo,#music').css('color', '#555');
+      });
+
+      $('#about').on('click', function () {
+        $('#about_page').fadeIn('slow'), $('#top_page,#travel_page,#photo_page,#music_page').fadeOut('slow'),
+          $('#about').css('color', 'crimson'), $('#top, #travel, #photo,#music').css('color', '#555');
+      });
+
+      $('#travel').on('click', function () {
+        $('#travel_page').fadeIn('slow'), $('#top_page,#photo_page,#music_page,#about_page').fadeOut('slow'),
+          $('#travel').css('color', 'crimson'), $('#about, #top, #photo,#music').css('color', '#555');
+      });
+
+      $('#photo').on('click', function () {
+        $('#photo_page').fadeIn('slow'), $('#top_page,#travel_page,#music_page,#about_page').fadeOut('slow'),
+          $('#photo').css('color', 'crimson'), $('#about, #travel, #top,#music').css('color', '#555');
+      });
+
+      $('#music').on('click', function () {
+        $('#music_page').fadeIn('slow'), $('#top_page,#travel_page,#photo_page,#about_page').fadeOut('slow'),
+          $('#music').css('color', 'crimson'), $('#about, #travel, #photo,#top').css('color', '#555');
+      });
+    });
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="leastjs/least.min.css" rel="stylesheet" />
+  <script src="leastjs/least.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.least-gallery').least();
+    });
+  </script>
+  <style>
+    * {
+      font-family: MyFont2;
+      line-height: 1.5;
+    }
+    
+    .top_comment p {
+      line-height: 1.5;
+    }
+    
+    #nav p {
+      font-size: 2vw;
+    }
+  </style>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-101885271-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <main>
+      <div id="nav">
+        <div class="nav_menu">
+          <a id="top" href="#">トップ</a>
+          <a id="about" href="#">プロフィール</a>
+          <a id="travel" href="#">旅</a>
+          <a id="photo" href="#">写真</a>
+          <a id="music" href="#">音楽</a>
+        </div>
+      </div>
+      <article class="contents">
+        <div id="top_page">
+          <div class="top_comment">
+            <p class="title">『Around The World
+              <br>Happiness of 184day's.』
+              <br> ～世界一周 184日間の旅～</p>
+            <br>
+            <p>ご覧いただきありがとうございます.
+              <br>ごゆっくりどうぞ。
+              <br>
+              <br><span> ツネミ サナエ</span></p>
+          </div>
+        </div>
+        <div id="about_page">
+          <h2>プロフィール</h2>
+          <div class="profile_comment">
+            <p>常味 早苗 (ツネミ サナエ)
+              <br> 出身 : 東京
+              <br> 職業 : ウェブクリエイター</p>
+            <br>
+            <section id="least">
+              <div id=" least-preview">
+                <ul class="least-gallery">
+                  <li>
+                    <a href="http://sanae-tsunemi.sub.jp/portfolio/index0.html" title="portfolio" data-subtitle="" data-caption="portfolio" target="_blank">
+                      <img src="images/portfolio.jpg" alt="portfolio">
+                    </a>
+                  </li>
+                </ul>
+                <a href="http://sanae-tsunemi.sub.jp/portfolio/index0.html" target="_blank">ポートフォリオサイト</a>
+              </div>
+            </section>
+            <h2>コンタクト</h2>
+            <div class="adress">
+              <a href="https://www.facebook.com/sana.tsune.54" target="_blank"><img src="images/facebook.png" alt="facebook">Face book</a>
+              <br>
+              <br>
+              <a href="mailto:sana.t3739&#64;gmail.com" target="_blank"><img src="images/mail.png" alt="mail">sana.t3739&#64;gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div id="travel_page">
+          <h2>旅の軌跡</h2>
+          <img src="images/map.jpg" alt="map">
+          <div class="travel_comment">
+            <p>2015年11月24日～2016年2月23日(92日間)
+              <br> タイ - インド - エジプト - ロンドン - ドイツ - フランス -
+              <br> スペイン - イタリア - アイスランド - ブラジル&amp;アルゼンチン</p>
+            <p>2016年3月7日〜2016年6月6日(92日間)
+              <br> ブラジル - エクアドル(ガラパゴス諸島) - ペルー - ボリビア -
+              <br>チリ(イースター島) - メキシコ - アメリカ(アリゾナ・ロサンゼルス・シアトル・ホノルル）</p>
+            <p>合計 : 184日間！！17ヵ国！！</p>
+          </div>
+          <iframe src="https://www.youtube.com/embed/xvS3bWi6UGA" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="photo_page">
+          <h2>写真ギャラリー</h2>
+          <section id="least">
+            <div id=" least-preview">
+              <ul class="least-gallery">
+                <li>
+                  <a href="#" title="Thailand" data-subtitle="" data-caption="Thailand">
+                    <img src="photo/Thailand.jpg" alt="Thiland">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="India" data-subtitle="" data-caption="India">
+                    <img src="photo/India.jpg" alt="India">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Egypt" data-subtitle="" data-caption="Egypt">
+                    <img src="photo/Egypt.jpg" alt="Egypt">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="London" data-subtitle="" data-caption="London">
+                    <img src="photo/London.jpg" alt="London">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Germany" data-subtitle="" data-caption="Germany">
+                    <img src="photo/Germany.jpg" alt="Germany">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="France" data-subtitle="" data-caption="France">
+                    <img src="photo/France.jpg" alt="France">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Spain" data-subtitle="" data-caption="Spain">
+                    <img src="photo/Spain.jpg" alt="Spain">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Itary" data-subtitle="" data-caption="Itary">
+                    <img src="photo/Itary.jpg" alt="Itary">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Iceland" data-subtitle="" data-caption="Iceland">
+                    <img src="photo/Iceland.jpg" alt="Iceland">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Brazil" data-subtitle="" data-caption="Brazil">
+                    <img src="photo/Brazil.jpg" alt="Brazil">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Argentina" data-subtitle="" data-caption="Argentina">
+                    <img src="photo/Argentina.jpg" alt="Argentina">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Galapagos Island" data-subtitle="" data-caption="Galapagos Island">
+                    <img src="photo/Ecuador.jpg" alt="Galapagos Island">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Peru" data-subtitle="" data-caption="Peru">
+                    <img src="photo/Peru.jpg" alt="Peru">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Bolivia" data-subtitle="" data-caption="Bolivia">
+                    <img src="photo/Bolivia.jpg" alt="Bolivia">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Easter Island" data-subtitle="" data-caption="Easter Island">
+                    <img src="photo/Chile.jpg" alt="Easter Island">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Mexico" data-subtitle="" data-caption="Mexico">
+                    <img src="photo/Mexico.jpg" alt="Mexico">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="USA(Arizona)" data-subtitle="" data-caption="USA(Arizona)">
+                    <img src="photo/USA_Arizona.jpg" alt="USA(Arizona)">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="USA(Hawaii)" data-subtitle="" data-caption="USA(Hawaii)">
+                    <img src="photo/USA_Hawaii.jpg" alt="USA(Hawaii)">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div id="music_page">
+          <h2>音楽</h2>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <a id="language" href="index.html">English / 日本語</a>
+      <small>Copyright (c) 2017 SANAE TSUNEMI. All Rights Reserved.</small> </footer>
+  </div>
+  <!--end div#wrapper-->
+</body>
+
+</html>
